@@ -1,0 +1,62 @@
+{
+  "name": "create-mino",
+  "version": "1.0.0",
+  "description": "Create React apps with best practices and modern tooling",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "create-mino": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsup src/index.ts --watch",
+    "build": "tsup src/index.ts",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "cli",
+    "generator",
+    "typescript",
+    "vite",
+    "shadcn",
+    "tailwind"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.0.0",
+    "figlet": "^1.7.0",
+    "fs-extra": "^11.1.1",
+    "gradient-string": "^2.0.2",
+    "inquirer": "^9.2.11",
+    "ora": "^7.0.1"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.5.8",
+    "@types/fs-extra": "^11.0.4",
+    "@types/gradient-string": "^1.1.5",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.8.4",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbj338033/create-mino.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jbj338033/create-mino/issues"
+  },
+  "homepage": "https://github.com/jbj338033/create-mino#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
